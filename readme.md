@@ -1,2 +1,2 @@
-#Learning how to use VS Code and GitHub
+#MyApp
 This is my app.
