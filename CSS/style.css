@@ -43,31 +43,49 @@ h1,h2,h3
 {
     width: 170px;
     float: left;
-}
-
-#nav .selected
-{
-    font-weight: bold;
-}
-
-#nav a
-{
-    text-decoration: none;
-    color: black;
+    /* background-color: tomato; */
 }
 
 #nav ul
 {
+    /* list-style-type: none;
+    padding: 0px; */
+
     list-style-type: none;
-    padding: 0px;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    background-color: #f1f1f1;
 }
+
+#nav li a 
+{
+    display: block;
+    color: #000;
+    padding: 8px 16px;
+    text-decoration: none;
+}
+
+#nav li a:hover
+{
+    background-color:orange;
+    color:white;
+}
+
+/* #nav li:hover
+{
+    
+} */
 
 /* main content */
 #main
 {
-    width: 1000px;
+    width: 1060px;
     float: right;
     text-align: justify;
+    background-color: gray;
+    padding: 10px;
+    margin-bottom: 10px;
 }
 
 /* footer */
@@ -97,4 +115,65 @@ h1,h2,h3
 p
 {
     color: red;
+}
+
+
+table
+{
+    border: 1px solid black;
+    width: 100%;
+    margin: 0px 0px 5px 0px;
+    border-collapse: collapse;
+    text-align: left;
+}
+
+td
+{
+    padding: 10px 0px 10px 5px;
+    border: 1px solid black;
+}
+
+tr:only-child
+{
+    background-color: orange;
+}
+
+#pb-link:link
+{
+    color:orange;
+}
+
+#pb-link:visited
+{
+    color: lime;
+}
+
+#pb-link:hover
+{
+    color:maroon;
+}
+
+
+/* for every link that precedes and h2 element */
+h2 + a
+{
+    color:red;
+}
+
+/* for every td that precedes a tr in the same parent */
+input ~ button 
+{
+    background-color: limegreen;
+}
+
+/* parent element to child specifically */
+tr > td
+{
+    color: rgb(104, 16, 177);
+}
+
+/* parent element to all descendants under it */
+tr td
+{
+    color: yellowgreen;
 }
