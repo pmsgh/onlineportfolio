@@ -9,6 +9,8 @@ h1,h2,h3
     margin:0px;
 }
 
+
+/*full webpage container*/
 #container
 {
     background-color:white;
@@ -29,7 +31,7 @@ h1,h2,h3
 }
 
 
-
+/* contains nav and main */
 #content
 {
     padding: 10px;
@@ -60,6 +62,7 @@ h1,h2,h3
     padding: 0px;
 }
 
+/* main content */
 #main
 {
     width: 1000px;
@@ -67,6 +70,7 @@ h1,h2,h3
     text-align: justify;
 }
 
+/* footer */
 
 #footer
 {
@@ -75,4 +79,22 @@ h1,h2,h3
     text-align: right;
     padding: 10px;
     color: white;
+}
+
+
+
+
+.stest
+{
+    color: blue;
+}
+
+#stest
+{
+    color: orange;
+}
+
+p
+{
+    color: red;
 }
