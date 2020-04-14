@@ -27,7 +27,10 @@ h1,h2,h3
     background-color: #66ccff;
     color: white;
     text-align: center;
-    padding: 10px;
+    /* no way to vertically middle a text inside a div,
+    the text line should be as big as the div container. */
+    line-height: 120px;
+    height:120px;
 }
 
 
@@ -120,7 +123,6 @@ p
 
 table
 {
-    border: 1px solid black;
     width: 100%;
     margin: 0px 0px 5px 0px;
     border-collapse: collapse;
@@ -130,17 +132,17 @@ table
 td
 {
     padding: 10px 0px 10px 5px;
-    border: 1px solid black;
+    border: 1px solid white;
 }
 
 tr:only-child
 {
-    background-color: orange;
+    background-color: darkorange;
 }
 
 #pb-link:link
 {
-    color:orange;
+    color:white;
 }
 
 #pb-link:visited
@@ -175,7 +177,7 @@ tr > td
 /* parent element to all descendants under it */
 tr td
 {
-    color: yellowgreen;
+    color: white;
 }
 
 #images-main img[src^="../images/"]
@@ -194,3 +196,36 @@ tr td
     margin-top: 20px;
     text-align: center;
 }
+
+.images-main-bg
+{
+    background-color: darkslategrey;
+}
+
+
+/* 
+selects any h2 element that has a class of images-main-font
+however, since that element selectors has low specificity,
+it gets overwritten by any specific class.
+
+h2[class=images-main-font]
+{
+    color:white;
+    padding: 5px;
+} 
+
+*/
+
+.images-main-font-bgcolor
+{
+    background-color: darkviolet;
+    height: 35px;
+}
+
+.images-main-font
+{
+    color:white;
+    padding: 5px;
+    line-height: 35px;
+}
+
