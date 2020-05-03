@@ -1,6 +1,6 @@
 body
 {
-    background-color:#EEEEEE;
+    background-color:gray;
     font-family: Helvetica, Arial, sans-serif;
 }
 
@@ -13,7 +13,7 @@ h1,h2,h3
 /*full webpage container*/
 #container
 {
-    background-color:white;
+    background-color:orange;
     width: 1280px;
     /* set the content center */
     margin-left: auto;
@@ -34,7 +34,9 @@ h1,h2,h3
 }
 
 
-/* contains nav and main */
+/* contains nav and main, better to use relative units for width/height
+and constant units for padding/margin
+*/
 #content
 {
     padding: 10px;
@@ -86,7 +88,7 @@ h1,h2,h3
     width: 1060px;
     float: right;
     text-align: justify;
-    background-color: gray;
+    background-color: slategray;
     padding: 10px;
     margin-bottom: 10px;
 }
@@ -107,17 +109,22 @@ h1,h2,h3
 
 .stest
 {
-    color: blue;
+    color: white;
+    text-align: justify;
+    font-family: 'Quicksand', sans-serif;
 }
 
 #stest
 {
-    color: orange;
+    color: white;
+    text-align: justify;
+
+    font-family: 'Mukta', sans-serif;
 }
 
 p
 {
-    color: red;
+    color: black;
 }
 
 
@@ -137,7 +144,7 @@ td
 
 tr:only-child
 {
-    background-color: darkorange;
+    background: linear-gradient(to right, rgb(255, 49, 160), rgba(255, 49, 160, 0));
 }
 
 #pb-link:link
@@ -157,9 +164,19 @@ tr:only-child
 
 
 /* for every link that precedes and h2 element */
-h2 + a
+h2
 {
     color:red;
+}
+
+a
+{
+    color:white;
+}
+
+.text-box
+{
+    margin-top: 10px;
 }
 
 /* for every td that precedes a tr in the same parent */
@@ -229,3 +246,104 @@ h2[class=images-main-font]
     line-height: 35px;
 }
 
+#bottom-paragraph
+{
+    padding: 10px;
+    margin-top: 10px;
+    /* background: linear-gradient(to bottom right, rgb(255, 49, 150), rgba(255, 49, 150, 0)); */
+    background: radial-gradient(circle, rgb(255, 49, 160), rgba(255, 49, 160, 0.3));
+}
+#bottom-paragraph-font
+{
+    color: white;
+    text-align: center;
+    font-size: 12pt;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.natotoyko
+{
+    font-style: oblique;
+}
+
+/* kailh box white model */ 
+
+#box-model
+{
+    margin-top: 10px;
+    border: 2px dashed black;
+    padding: 15px 90px 15px 90px;
+    background-color:tan;
+    width: 50wv;
+}
+
+#box-model p
+{
+    text-align: center;
+    font-family: 'Mukta', sans-serif;
+    font-size: 1.50em;
+    text-align: center;
+    color: white;
+}
+
+.box-model-text
+{
+    padding: 5px 15px 5px 15px;
+    border: 5px double white;
+}
+
+#box-model-with-image
+{
+    margin-top:10px;
+    padding:10px;
+    border: 5px double black;
+    text-align: center;
+}
+
+#box-model-image
+{
+    padding: 20px 100px 20px 100px;
+    margin-top: 10px;
+    border: 5px dashed goldenrod;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: cyan;
+    height: 25vw;
+    width: 20vw;
+}
+
+
+#display-type
+{
+    padding: 10px;
+    margin-top: 10px;
+    text-align: center;
+    border: 5px double orange;
+}
+
+#display-type ul
+{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    background-color: #f1f1f1;
+    
+}
+
+#display-type li
+{
+    display: block;
+    color: #000;
+    padding: 8px 16px;
+    text-decoration: none;
+    border: 1px dashed black;
+}
+
+
+/* 
+
+3:20:04 / 6:18:37 video timestamp
+
+*/
