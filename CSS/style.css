@@ -349,6 +349,53 @@ h2[class=images-main-font]
 }
 
 
+#flex-box
+{
+    margin-top: 10px;
+    width: 100%;
+    box-sizing: border-box;
+    border: dashed 2px white;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+}
+
+.flex-items
+{
+    padding: 10px;
+    margin: 5px;
+    color: white;
+    background-color: darkolivegreen;
+    width: 50px;
+    line-height: 120px;
+    text-align: center;
+}
+
+#grid-container
+{
+    border: dashed 2px white;
+    margin-top: 10px;
+    height: 600px;
+
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto;
+    grid-gap: 10px;
+}
+
+.grid-item
+{
+    font-size: 16px;
+    text-align: center;
+    
+    width: 70px;
+    line-height: 70px;
+}
+
+
 .textbox
 {
     padding: 12px 8px;
@@ -359,6 +406,13 @@ h2[class=images-main-font]
     width: 100%;
     font-family: Quicksand, sans-serif;
     font-size: 16px;
+    border: 0px solid rgb(255,235,59);
+    transition: border 100ms ease-in-out;
+}
+
+.textbox:focus
+{
+    border-width: 4px;
 }
 
 form
@@ -392,53 +446,41 @@ form h1
     margin-bottom: 0px;
 }
 
+select
+{
+   padding: 12px 8px;
+   margin-top: 10px;
+   margin-bottom: 10px;
+   display: block;
+   box-sizing: border-box;
+   width: 100%;
+   font-family: Quicksand, sans-serif;
+   font-size: 16px;
+}
+
  input[type=submit]
  {
-     padding: 10px;
+     padding: 10px 10px;
      margin-top: 10px;
      width: 110px;
      font-family: Quicksand, sans-serif;
      font-size: 16px;
      float: right;
+     border: none;
+     background-color: rgb(21,101,192);
+     color: white;
+     transition: all 100ms ease-in-out;
+     transform: matrix()
  }
 
- select
+
+ input[type=submit]:hover
  {
-    padding: 12px 8px;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    display: block;
-    box-sizing: border-box;
-    width: 100%;
-    font-family: Quicksand, sans-serif;
-    font-size: 16px;
+     background-color: rgb(30,136,229);
+     color: white;
+     padding: 20px 20px;
  }
 
-
-#flex-box
-{
-    margin-top: 10px;
-    width: 100%;
-    box-sizing: border-box;
-    border: dashed 2px white;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    height: 200px;
-}
-
-.flex-items
-{
-    padding: 10px;
-    margin: 5px;
-    color: white;
-    background-color: darkolivegreen;
-    width: 50px;
-    line-height: 120px;
-    text-align: center;
-}
 
 /*
 
@@ -454,5 +496,9 @@ none - remove from display.
 3:20:04 / 6:18:37 video timestamp
 
 3:59:15 video timestamp
+
+4:11:28 video timestamp
+
+5:09:34 video timestamp
 
 */
